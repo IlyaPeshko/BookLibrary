@@ -1,0 +1,85 @@
+a.spoiler:after {
+    content: " [-]";
+}
+
+a.spoiler.collapsed:after {
+    content: " [+]";
+}
+.nav-tabs {
+	margin-bottom: 15px;
+}
+
+
+@media screen and (max-width: 767px) {
+	.masonry[data-columns]::before {
+		content: '1 .col-xs-12';
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.masonry[data-columns]::before {
+		content: '2 .col-xs-6';
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.masonry[data-columns]::before {
+		content: '3 .col-xs-6';
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.masonry[data-columns]::before {
+		content: '4 .col-xs-4';
+	}
+}
+
+.page
+{
+    width: 960px;
+    margin: 0px auto;
+    content: '4 .col-xs-7';
+}
+
+
+
+.pagination li
+{
+    list-style:none;
+    float:left;
+    width : 20px;
+    height:20px;
+    border: 1px solid white;
+    background-color:grey;
+    color:white;
+    text-align:center;
+    cursor:pointer;
+}
+
+.pagination li:hover
+{
+    background-color: white;
+    border:1px solid black;
+    color: black;
+}
+
+.pagination ul
+{
+    border: 0px;
+    padding: 0px;
+}
+
+.active-class
+{
+    background-color: white !important;
+    border:1px solid black !important;
+    color: black !important;
+}
+
+.btn-glyphicon {  padding:8px; background:#ffffff; margin-right:4px;  }
+.icon-btn {  padding: 1px 15px 3px 2px; border-radius:50px;  }
+
+.first-box{padding:10px;background:#9C0;}
+.second-box{padding:10px; background:#39F;}
+.third-box{padding:10px;background:#F66;}
+.fourth-box{padding:10px;background:#6CC;}

@@ -1,0 +1,10 @@
+tomcat start
+
+dir//  apache tomcat
+run// ./startup.sh
+stop// ./shutdown.sh
+run with logs// ./catalina.sh run
+
+absolute path
+conf/server.xml // <Context path="" DocBase="/Users/user/IdeaProjects/MyLibrary/web"
+                             reloadable="true"/>
